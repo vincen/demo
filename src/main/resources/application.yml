@@ -1,1 +1,5 @@
-
+spring:
+  mvc:
+    view:
+      prefix: /static/jsp/
+      suffix: .jsp
