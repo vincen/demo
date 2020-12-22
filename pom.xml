@@ -19,9 +19,25 @@
     </properties>
 
     <dependencies>
+        <!-- compile -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <!-- provided -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-tomcat</artifactId>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -45,12 +61,19 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/src/main/resources/lib/jackson-all-1.9.1.jar</systemPath>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>sso-oauth2</groupId>-->
+<!--            <artifactId>oauth2</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/src/main/resources/lib/sso-oauth2-sdk.jar</systemPath>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>sso-oauth2</groupId>
-            <artifactId>oauth2</artifactId>
+            <groupId>yum-oauth2</groupId>
+            <artifactId>sdk4test</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/sso-oauth2-sdk.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/lib/yum-oauth2-sdk4test.jar</systemPath>
         </dependency>
 
         <dependency>
